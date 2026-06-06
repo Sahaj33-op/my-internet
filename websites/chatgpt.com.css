@@ -73,7 +73,7 @@ main,
   pointer-events: none !important;
 }
 
-/* cgpt-Glass Sidebar $ Applies a frosted glass styling and smooth scroll-edge gradients to the sidebar. */
+/* cgpt-Sidebar $ Applies a frosted glass styling and smooth scroll-edge gradients to the sidebar. */
 /* @Styles only sidebar surfaces and ChatGPT's own scroll helper, not every sticky element */
 #stage-slideover-sidebar,
 #stage-sidebar,
@@ -246,7 +246,7 @@ html.dark nav[aria-label="Navigation"] .truncate {
   box-shadow: inset 0 0 0 1px var(--cgpt-border-strong) !important;
 }
 
-/* cgpt-Glass Header $ Makes the main page header fully transparent while styling the Share and Options buttons with a glass finish. */
+/* cgpt-Header $ Makes the main page header fully transparent while styling the Share and Options buttons with a glass finish. */
 /* @Removes header surface/background while preserving readable action buttons */
 #page-header,
 #page-header[data-fixed-header],
@@ -369,7 +369,7 @@ html.dark nav[aria-label="Navigation"] .truncate {
   color: currentColor !important;
 }
 
-/* cgpt-Activity Search Cleanup $ Clears solid OLED backgrounds for search results and activity headers. */
+/* cgpt-Activity Search $ Clears solid OLED backgrounds for search results and activity headers. */
 [data-testid="bar-search-sources-header"],
 [data-testid="bar-search-sources-header"] > div {
   --main-surface-primary: #0000 !important;
@@ -378,7 +378,7 @@ html.dark nav[aria-label="Navigation"] .truncate {
   box-shadow: none !important;
 }
 
-/* cgpt-Glass Composer $ Styles the prompt text input field with translucent glass and smooth border highlights. */
+/* cgpt-Composer $ Styles the prompt text input field with translucent glass and smooth border highlights. */
 /* @Targets form[data-type="unified-composer"] and [data-composer-surface="true"] */
 #thread-bottom-container,
 #thread-bottom,
@@ -480,7 +480,7 @@ form[data-type="unified-composer"] .composer-submit-button-color {
   background: linear-gradient(to top, light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.34)), transparent) !important;
 }
 
-/* cgpt-Glass Messages $ Styles both user and assistant chat message bubbles in a modern translucent glass. */
+/* cgpt-Messages $ Styles both user and assistant chat message bubbles in a modern translucent glass. */
 /* @User bubble uses .user-message-bubble-color, assistant uses .markdown */
 .user-message-bubble-color,
 .bg-token-message-surface {
@@ -554,7 +554,7 @@ button[aria-label*="Copy code"]:hover,
   opacity: 0 !important;
 }
 
-/* cgpt-Glass Code Blocks $ Styles the sticky headers and copy buttons of code blocks with frosted glass. */
+/* cgpt-Code Blocks $ Styles the sticky headers and copy buttons of code blocks with frosted glass. */
 /* @Targets code block language header rows like CSS / Python and their Copy button */
 [data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] {
   background: transparent !important;
@@ -629,7 +629,7 @@ button[aria-label*="Copy code"]:hover,
   transform: translateY(1px) !important;
 }
 
-/* cgpt-Glass Reasoning Drawer $ Applies a beautiful frosted glass panel to the side thinking/reasoning drawer. */
+/* cgpt-Reasoning Drawer $ Applies a beautiful frosted glass panel to the side thinking/reasoning drawer. */
 /* @Targets reasoning and thinking output */
 [data-testid="stage-thread-flyout"],
 [data-stage-thread-flyout="true"] {
@@ -656,7 +656,7 @@ section[aria-label="Reasoning details"] [class*="border-"] {
   border-color: var(--cgpt-border) !important;
 }
 
-/* cgpt-Glass Menus and Tooltips $ Styles context menus, tooltips, dialog boxes, and settings panels with frosted glass. */
+/* cgpt-Menus and Tooltips $ Styles context menus, tooltips, dialog boxes, and settings panels with frosted glass. */
 /* @Keeps dropdown controls readable */
 [role="tooltip"],
 [class="tooltip"] {
@@ -692,7 +692,7 @@ section[aria-label="Reasoning details"] [class*="border-"] {
   border: 1px solid var(--cgpt-border-strong) !important;
 }
 
-/* cgpt-Glass Artifact Controls $ Applies clean glassmorphism to controls and tabs inside the Artifacts side panel. */
+/* cgpt-Artifact Controls $ Applies clean glassmorphism to controls and tabs inside the Artifacts side panel. */
 /* @Targets [data-testid="artifacts-surface-top-controls"] */
 [data-testid="artifacts-surface-top-controls"],
 [data-testid="artifacts-surface-top-controls"] .bg-surface-primary,
@@ -808,7 +808,7 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
   color: var(--cgpt-glass-text-muted) !important;
 }
 
-/* cgpt-Glass GPTs Categories $ Styles the GPT category navigation pills and secondary buttons in a translucent glass container. */
+/* cgpt-GPTs Categories $ Styles the GPT category navigation pills and secondary buttons in a translucent glass container. */
 /* @Targets no-scrollbar flex scroll pill row */
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] {
   position: relative !important;
@@ -902,7 +902,7 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   }
 }
 
-/* cgpt-Reduced Motion Optimizations $ Disables or speeds up animations and transitions for users with reduced motion settings. */
+/* cgpt-Reduced Motion $ Disables or speeds up animations and transitions for users with reduced motion settings. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
